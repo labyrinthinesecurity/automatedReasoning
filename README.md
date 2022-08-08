@@ -6,7 +6,7 @@
 
 - proving the Hub & Spoke pattern at scale
 
-### References
+# References
 
 Azure: A practical Automated Reasoning implementation in Azure Networking + what-if scenarios: https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/secguru.pdf
 AWS: Be curious about automated reasoning by Werner Vogels https://www.allthingsdistributed.com/2022/03/curious-about-automated-reasoning.html
