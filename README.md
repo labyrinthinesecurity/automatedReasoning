@@ -4,7 +4,9 @@
 
 # List of automated reasoning controls in this repository
 
-- proving the Hub & Spoke pattern at scale
+- proving the Hub & Spoke pattern at scale: https://github.com/labyrinthinesecurity/automatedReasoning/blob/main/HubSpoke.pdf
+- proving controls continuity of operations over a compliance period: https://github.com/labyrinthinesecurity/automatedReasoning/blob/main/2_ProvableCloudControls.pdf
+- proving Just In Time access to Azure PaaS services
 
 # References
 
