@@ -6,7 +6,7 @@
 
 - proving the Hub & Spoke pattern at scale: https://github.com/labyrinthinesecurity/automatedReasoning/blob/main/HubSpoke.pdf
 - proving controls continuity of operations over a compliance period: https://github.com/labyrinthinesecurity/automatedReasoning/blob/main/2_ProvableCloudControls.pdf
-- proving Just In Time access to Azure PaaS services
+- proving Just In Time access to Azure PaaS services: https://github.com/labyrinthinesecurity/automatedReasoning/blob/main/3_ToxLocks.pdf 
 
 # References
 
