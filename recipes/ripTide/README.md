@@ -5,10 +5,16 @@
 - Suppose that, from ground truth, we collect a list of principal IDs belonging to a first set. Since the information is "from the field", we call this set the ***bottom up*** set.
 - Now suppose that we have an exceptions list of principal IDs. Since this list is axiomatic, we call it the ***top down*** set.
 
-The question to answer by a formal proof is the following: is there an ID in the ***bottom up*** sets which doesn"t belong to the ***top down*** set?
-If the answer is "Yes", then this should raise an anomaly in our control framework.
+## Problem statement
+Is there a satisfiable solution to the following problem: there exists a principal ID in the ***bottom up*** sets which isn't redundant in the  ***top down*** set
 
-In the Python sample, users John and Jack belong to the exception list, but Julia doesn't. If Julia pops up from ground truth, this is an anomaly.
+If the answer is "Yes", then this should raise an anomaly in our control framework, because we have found an unexpected user that doesn't belong to the exceptions list.
+
+In the Python sample, users John and Jack belong to the exception list, but Julia doesn't. 
+
+Users from ground truth are associated with the following booleans: bottomUp 1 for John, bottomUp 2 for JAck, bottomUp 3 for Julia.
+
+Julia pops up from ground truth, but since she is not in the top down list, her ID is not redundant. It means that the boolean associated to her ID is satisfiable.
 
 ## The ripTide algorithm
 
