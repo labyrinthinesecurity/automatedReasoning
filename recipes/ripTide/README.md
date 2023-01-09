@@ -25,3 +25,5 @@ I found this algorithm while reading Microsoft Research's paper on secGuru. Here
 
 ![Alt text](https://github.com/labyrinthinesecurity/automatedReasoning/blob/main/recipes/ripTide/ripTideAlgo.PNG)
 
+The original paper: https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/secguru.pdf
+
