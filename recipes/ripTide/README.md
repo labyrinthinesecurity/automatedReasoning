@@ -1,6 +1,7 @@
 ![Alt text](https://github.com/labyrinthinesecurity/automatedReasoning/blob/main/recipes/ripTide/monsterRipTide.png)
 
-**ripTide** is an automated reasoning pattern which checks whether a principal Id belongs to an exceptions list.
+**ripTide** is an automated reasoning pattern which checks if a member from a set belongs to another set.
+It solves a wide range of group membership problems.
 
 - Suppose that, from ground truth, we collect a list of principal IDs belonging to a first set. Since the information is "from the field", we call this set the ***bottom up*** set.
 - Now suppose that we have an exceptions list of principal IDs. Since this list is axiomatic, we call it the ***top down*** set.
@@ -9,6 +10,8 @@
 Is there a satisfiable solution to the following problem: there exists a principal ID in the ***bottom up*** sets which isn't redundant in the  ***top down*** set
 
 If the answer is "Yes", then this should raise an anomaly in our control framework, because we have found an unexpected user that doesn't belong to the exceptions list.
+
+## Python solution sample
 
 In the Python sample, users John and Jack belong to the exception list, but Julia doesn't. 
 
