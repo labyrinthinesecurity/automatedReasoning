@@ -19,7 +19,7 @@ In the Python sample, users John and Jack belong to the exception list, but Juli
 - Users from ground truth are associated with the following booleans: bottomUp 1 for John, bottomUp 2 for Jack, bottomUp 3 for Julia.
 
 ```
-l.add(ruleBottomUp1==Or(principalId==GREEN_JOHN))
+sol.add(ruleBottomUp1==Or(principalId==GREEN_JOHN))
 sol.add(ruleBottomUp2==Or(principalId==GREEN_JACK))
 sol.add(ruleBottomUp3==Or(principalId==BLUE_JULIA))
 ```
