@@ -1,5 +1,7 @@
 # Automated reasoning for native Cloud, scalable security automation
 
+![alt text](https://github.com/labyrinthinesecurity/automatedReasoning/blob/main/reasoning.jpeg)
+
 ## What is automated reasoning?
 
 Automated reasoning solves problems as if they were mathematical proofs. It leverages solvers based on Satisfiability Modulo Theories (SMT).
@@ -53,5 +55,7 @@ Here you will find two kinds of material:
 - AWS: Be curious about automated reasoning by Werner Vogels https://www.allthingsdistributed.com/2022/03/curious-about-automated-reasoning.html
 
 ## License information
+
+The top image is copyright Adobe Photo Stock. Used with permission. 
 
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
