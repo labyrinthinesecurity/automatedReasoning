@@ -1,23 +1,51 @@
 # Automated reasoning for native Cloud, scalable security automation
 
-This repository contains two kinds of material:
-- ***recipes*** for illustrating how to implement specific patterns
-- ***control designs*** 
+## What is automated reasoning?
 
-## An introduction to automated reasoning
-
-Automated reasoning solves problems like mathematical proofs. It leverages unattended solvers based on Satisfiability Modulo Theories (SMT).
-There are many solvers around, the one I'm using is Z3. It is fitted within many built-in theories and is quite easy to use in Python:
+Automated reasoning solves problems as if they were mathematical proofs. It leverages solvers based on Satisfiability Modulo Theories (SMT).
+There are many solvers around, the one I'm using is Z3. It is fitted with many built-in theories and is quite easy to use in Python:
 
 ```
 import z3
 sol=Solver()
 ```
 
+I have written a primer which should get you started: https://www.linkedin.com/pulse/primer-automated-reasoning-cloud-engineers-christophe-parisel
 
-## What can it bring to Cloud customers?
+
+## What can it bring to native Cloud control frameworks?
+
+### The legacy, non-native way
+Here is the usual approach you take to implement a control:
+- design the control
+- build it
+- run it continuously in-place
+- manage anomalies
+- manage false positives
+- record detailed control execution for forensic analysis and/or audits- conduct change management as program increments (PIs)
+
+### A cloud native way
+Now with automated reasoning, since you operate **anything-as-cod**e (infrastructure-as-code at least),
+chances are you may translate your control objective into a mathematical formula to be proven by an unsupervised, automated solver. A new avenue unlocks for your team:
+- design the formula
+- feed it from authoritative sources (“axioms”): ground truth + static data- prove it continuously
+- manage anomalies as unproven theorems (“nontheorems”)
+- conduct change management as what-if scenarios
+
+### Expected benefits
+- no false positives
+- lightweight, powerful change management
+- eligible to quantum speedup
+- no need to keep records for forensic analysis and/or audits (only
+execution timestamps and anomalies)
 
 Automation (because it is unattended), scalability and formal verifications. The latter is notably useful for auditors.
+
+## What you will find in this repository
+
+Here you will find two kinds of material:
+- ***recipes*** for illustrating how to implement basic, resuable patterns
+- ***control designs*** explain how to implement actual security or compliance controls from the ground up
 
 ## References
 
