@@ -18,15 +18,13 @@ I have written a primer which should get you started: https://www.linkedin.com/p
 
 Say you want to solve a problem involving two expressions: x^2 + y^2 = 25, and x > 3
 
-With the help of ***congruence closure***, the solver will place each expression in its own equivalence class, then it will try to transform the expressions to put them into a smal number of equivalence classes. THis process is called ***unification***
+With the help of ***congruence closure***, the solver will place each expression in its own equivalence class, then it will try to transform the expressions to put them into a smaller number of equivalence classes. This process is called ***unification***
 
-Here we have only 2 equivalence classes, so we just need to find a way to unify them into a single class. If we manage to do so, then we will have found a solution to our probelm.
+Here we have only 2 equivalence classes, so we just need to find a way to unify them into a single class. If we manage to do so, then we will have found a solution to our problem.
 
-Unification works as follows: depending on the nature of the expressions at hand, the solver will use the rules of a ***theory*** to transform the expressions and put them into normal form. 
+Unification works as follows: depending on the nature of the expressions at hand, the solver will use the rules of a ***theory*** to transform the expressions and put them into normal form. In our example, the expressions deal with integers, so the solver will use the rules of the ***natural numbers theory***, things like distributivity, commutativity, etc
 
-In our example, the expressions deal with integers, so the solver will use the rules of the ***natural numbers theory***, things like distributivity, commutativity, etc
-
-Here is a possible way to derive a solution:
+Here is a possible way to derive a solution using only rules of the natural numbers theory:
 - put x^2 + y^2 = 25 in one quivalence class, x > 3 in another
 - use natural numbers theory rules like substraction and root squaring to deduce that x = sqrt(25-y^2)
 - substitute this value of x in the second expression x > 3, yielding: sqrt(25-y^2) > 3
@@ -39,6 +37,7 @@ Here is a possible way to derive a solution:
 
 Both expressions can be unified into a single equivalence class in the case of (x=4,y=3), so the problem is SATisfiable.
 
+What makes Z3 (and similar SMT solvers) very powerful is that they can derive solutions by mixing several theories together. Look at my project kinglet for example: it combines 3 theories: BitVectors logic, Propositional logic, and the theory of Equality.
 
 ## What can it bring to native Cloud control frameworks?
 
