@@ -16,15 +16,29 @@ I have written a primer which should get you started: https://www.linkedin.com/p
 
 ## How Z3 and SMT solvers work?
 
-Say you want to solve a problem involving two expressions: y < x+5 and y > x + 3
+Say you want to solve a problem involving two expressions: x^2 + y^2 = 25, and x > 3
 
 With the help of ***congruence closure***, the solver will place each expression in its own equivalence class, then it will try to transform the expressions to put them into a smal number of equivalence classes. THis process is called ***unification***
 
-Here we have only 2 equivalence classes, so we just need to find a way to unify them into a single class. If we manage to do so, then we will have found a solution to our problme.
+Here we have only 2 equivalence classes, so we just need to find a way to unify them into a single class. If we manage to do so, then we will have found a solution to our probelm.
 
 Unification works as follows: depending on the nature of the expressions at hand, the solver will use the rules of a ***theory*** to transform the expressions and put them into normal form. 
 
-In our example, te expressions deal with integers, so the solver will use the rules of the ***natural numbers theory***, things like distributivity, commutativity, etc
+In our example, the expressions deal with integers, so the solver will use the rules of the ***natural numbers theory***, things like distributivity, commutativity, etc
+
+Here is a possible way to derive a solution:
+- put x^2 + y^2 = 25 in one quivalence class, x > 3 in another
+- use natural numbers theory rules like substraction and root squaring to deduce that x = sqrt(25-y^2)
+- substitute this value of x in the second expression x > 3, yielding: sqrt(25-y^2) > 3
+- use squaring: 25 -y^2 > 9
+- use addition and substrction: 16 > y^2
+- use root squaring: 4 > y 
+- in the first expression, substitute y with the first possible value that meets the above constraint (y == 3), yielding x^2 + 9 = 25
+- use substraction: x^2 = 16
+- use squaring: x = 4
+
+Both expressions can be unified into a single equivalence class in the case of (x=4,y=3), so the problem is SATisfiable.
+
 
 ## What can it bring to native Cloud control frameworks?
 
