@@ -14,6 +14,17 @@ sol=Solver()
 
 I have written a primer which should get you started: https://www.linkedin.com/pulse/primer-automated-reasoning-cloud-engineers-christophe-parisel
 
+## How Z3 and SMT solvers work?
+
+Say you want to solve a problem involving two expressions: y < x+5 and y > x + 3
+
+With the help of ***congruence closure***, the solver will place each expression in its own equivalence class, then it will try to transform the expressions to put them into a smal number of equivalence classes. THis process is called ***unification***
+
+Here we have only 2 equivalence classes, so we just need to find a way to unify them into a single class. If we manage to do so, then we will have found a solution to our problme.
+
+Unification works as follows: depending on the nature of the expressions at hand, the solver will use the rules of a ***theory*** to transform the expressions and put them into normal form. 
+
+In our example, te expressions deal with integers, so the solver will use the rules of the ***natural numbers theory***, things like distributivity, commutativity, etc
 
 ## What can it bring to native Cloud control frameworks?
 
