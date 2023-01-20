@@ -1,4 +1,4 @@
-![Alt text](https://github.com/labyrinthinesecurity/automatedReasoning/blob/main/recipes/setsMEmbership/monsterRipTide.png)
+![Alt text](https://github.com/labyrinthinesecurity/automatedReasoning/blob/main/recipes/setsMembership/monsterRipTide.png)
 
 **ripTide** is an automated reasoning pattern to check if a set member belongs to another set, i.e. to check sets intersection and sets difference.
 
