@@ -29,11 +29,11 @@ Here is a possible way to derive a solution using only rules of the natural numb
 - use natural numbers theory rules like substraction and root squaring to deduce that x = sqrt(25-y^2)
 - substitute this value of x in the second expression x > 3, yielding: sqrt(25-y^2) > 3
 - use squaring: 25 -y^2 > 9
-- use addition and substrction: 16 > y^2
+- use addition (add y^2) and substraction (substract 9): 16 > y^2
 - use root squaring: 4 > y 
 - in the first expression, substitute y with the first possible value that meets the above constraint (y == 3), yielding x^2 + 9 = 25
 - use substraction: x^2 = 16
-- use squaring: x = 4
+- use root squaring: x = 4
 
 Both expressions can be unified into a single equivalence class in the case of (x=4,y=3), so the problem is SATisfiable.
 
