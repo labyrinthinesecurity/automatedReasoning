@@ -6,7 +6,7 @@ Phil Venables outlines the importance of continuous control monitoring as [Force
   
 ## Automating Master Data
 
-In the PaaS Cloud, we can leverage a huge opportunity to automate the monitoring of many security and compliance controls: Cloud providers keep up a realtime, comprehensive CMDB of customer assets. APIs like **Azure Resource Graph**, **AWS resources explorer** or **steampipe** are easy and fast to query.
+In the PaaS Cloud, we can leverage a huge opportunity to automate the monitoring of many security and compliance controls: Cloud providers keep up a realtime, comprehensive CMDB of customer assets. APIs like **Azure Resource Graph**, **AWS resources explorer** or **steampipes** are easy and fast to query.
 
 In fact, these APIs have become the actual Master Data of all our deployed assets: they are the *ground truth*. 
 
@@ -27,3 +27,6 @@ A very nice and useful feature of this technology is that we can use it to provi
 - the "HubAndSpoke" control is an example of how to conduct automated reasoning on the spacial axis. It **proves** that a specific Cloud security pattern (the Hub & Spoke pattern) is enforced in an Azure Tenant or an AWS organization.
 - the "ContinuousCompliance" control is an example of how to conduct automated reasoning on the temporal axis. It **proves** that a specific control is enforced continuously over a period.
 
+**Combining both controls into one let us prove compliance over the whole continuum**. 
+
+Not only does it expand the traditional way we handle controls by adding the temporal dimension, but it also delivers undisputable proofs to auditors and human controlers. All this without using up any manpower! Except of course for handling anomalies.
