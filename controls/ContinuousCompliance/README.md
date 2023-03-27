@@ -30,7 +30,7 @@ A very nice and useful feature of this technology is that we can use it to provi
 
 **Combining both controls into one let us prove compliance over the whole continuum**. 
 
-For in-depth information about the Compliance Continuum, please read my [whitepaper (PDF)](https://github.com/labyrinthinesecurity/automatedReasoning/blob/main/controls/2_ProvableCloudControls.pdf)
+For in-depth information about the Compliance Continuum, please read my [whitepaper (PDF)](https://github.com/labyrinthinesecurity/automatedReasoning/blob/main/controls/ContinuousCompliance/2_ProvableCloudControls.pdf)
 
 Not only does it expand the traditional way we handle controls by adding the temporal dimension, but it also delivers undisputable proofs to auditors and human controlers. All this without using up any manpower! Except of course for handling anomalies.
 
