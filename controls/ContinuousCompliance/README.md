@@ -4,7 +4,7 @@ Phil Venables outlines the importance of continuous control monitoring as [Force
 
   ![Force 4](https://github.com/labyrinthinesecurity/automatedReasoning/blob/main/controls/ContinuousCompliance/Force4.PNG)
   
-## Automating Master Data
+## Automating the Master Data of Cloud security and compliance
 
 In the PaaS Cloud, we can leverage a huge opportunity to automate the monitoring of many security and compliance controls: Cloud providers keep up a realtime, comprehensive CMDB of customer assets. APIs like **Azure Resource Graph**, **AWS resources explorer** or **steampipes** are easy and fast to query.
 
@@ -18,7 +18,8 @@ For a control to be 'compliant' to any certification standard, it must meet two 
 - **spacial compliance**: this is the usual way we see control operations. The control must be reliable and comprehensive with regards its functional scope. For example, if a control is supposed to enforce a Bastion for remote access, this control must have no possible bypass (by a legacy network access point, by small group of privileged users, by non-standard ports/encapsulation, etc)
 - **temporal compliance**: the control must have no continuity break over the certification period (eg: a 6 months SOC2 certification period).
 
-## Automating Cloud Compliance Continuum
+
+## Automating the Cloud Compliance Continuum
 
 Automated reasoning is a new and powerful way to perform **unsupervised** control monitoring on infrastructure-as-code assets.
 
@@ -29,4 +30,7 @@ A very nice and useful feature of this technology is that we can use it to provi
 
 **Combining both controls into one let us prove compliance over the whole continuum**. 
 
+For in-depth information about the Compliance Continuum, please read [my whitepaper PDF](https://github.com/labyrinthinesecurity/automatedReasoning/blob/main/controls/C2_ProvableCloudControls.pdf)
+
 Not only does it expand the traditional way we handle controls by adding the temporal dimension, but it also delivers undisputable proofs to auditors and human controlers. All this without using up any manpower! Except of course for handling anomalies.
+
